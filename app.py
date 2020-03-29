@@ -12,7 +12,7 @@ def get_Host_name_IP():
    except:
       print("Unable to get Hostname and IP")
 
-print "*** Hit CTRL+C to stop ***"
+print("*** Hit CTRL+C to stop ***")
 
 while True:
    now = datetime.now()
