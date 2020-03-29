@@ -1,5 +1,7 @@
 from datetime import datetime
+import time
 import socket
+
 
 def get_Host_name_IP():
    try:
@@ -10,8 +12,12 @@ def get_Host_name_IP():
    except:
       print("Unable to get Hostname and IP")
 
-now = datetime.now()
+print "*** Hit CTRL+C to stop ***"
 
-current_time = now.strftime("%H:%M:%S")
-print("Current Time =", current_time)
-get_Host_name_IP()
+while True:
+   now = datetime.now()
+   current_time = now.strftime("%H:%M:%S")
+   print("Current Time =", current_time)
+   get_Host_name_IP()
+
+   time.sleep(10)
